@@ -24,7 +24,7 @@ $capturaEnlace = new PaginaController;
 
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
 </head>
-<?php require_once('navbar.php'); ?>
+<?php require_once('View/pages/navbar.php'); ?>
 
 <body>
 
