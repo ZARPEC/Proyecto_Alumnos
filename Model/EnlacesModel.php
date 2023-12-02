@@ -9,6 +9,7 @@ class EnlacesModel{
             "inicio"=>"View/pages/inicio.php",
             "nosotros"=>"View/pages/nosotros.php",
             "contacto"=>"View/pages/contacto.php",
+            "login"=>"View/users/login.php",
             default => "View/pages/error.php"
 
         };
