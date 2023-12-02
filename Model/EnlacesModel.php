@@ -7,6 +7,7 @@ class EnlacesModel{
         
         $modulo =match($enlace){
             "inicio"=>"View/pages/inicio.php",
+            "nosotros"=>"View/pages/nosotros.php",
             default => "View/pages/error.php"
 
         };
