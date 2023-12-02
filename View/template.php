@@ -28,11 +28,15 @@ $capturaEnlace = new PaginaController;
 
 <body>
 
-    <div class="container">
+    <div class="container vh-100">
         <?php
         $capturaEnlace->enlacesPagina();
         ?>
     </div>
 </body>
+
+<footer class="bg-dark text-light text-center py-3 bottom">
+    <p>&copy; 2023 Sistema de Control de Alumnos</p>
+</footer>
 
 </html>

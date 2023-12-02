@@ -4,7 +4,7 @@
         <nav class="navbar bg-body-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://www.zarla.com/images/zarla-el-escribano-1x1-2400x2400-20220329-cywvjv9hkjt996b48vvb.png?crop=1:1,smart&width=250&dpr=2" width="80" height="60" class="d-inline-block align-text-top">
+                    <img src="Assets/logo.png" width="60" height="40" class="d-inline-block align-text-top">
                 </a>
             </div>
         </nav>
