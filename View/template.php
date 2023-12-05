@@ -28,7 +28,7 @@ $capturaEnlace = new PaginaController;
 
 <body>
 
-    <div class="container vh-100">
+    <div class="container vh-100 scrollStyle">
         <?php
         $capturaEnlace->enlacesPagina();
         ?>
