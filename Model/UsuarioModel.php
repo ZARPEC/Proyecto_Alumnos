@@ -20,7 +20,7 @@ class UsuarioModel
     public static function CrearCuenta($datos)
     {
         try {
-            $stmt = ConexionModel::conectar()->prepare("INSERT INTO usuario(nombres,apellidos,usuario,password,rol) values(:nom,:ape,:user,:pass,:rol)");
+            $stmt = ConexionModel::conectar()->prepare("INSERT INTO usuario(nombres,apellidos,usuario,password,fkrol) values(:nom,:ape,:user,:pass,:rol)");
             $stmt->bindParam(":nom", $datos['nombre'], \PDO::PARAM_STR);
             $stmt->bindParam(":ape", $datos['apellido'], \PDO::PARAM_STR);
             $stmt->bindParam(":user", $datos['usuario'], \PDO::PARAM_STR);
@@ -31,4 +31,11 @@ class UsuarioModel
             return false;
         }
     }
+
+    public static function mostrarRol(){
+        $stmt = ConexionModel::conectar()->prepare("SELECT * FROM rol");
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+  
 }
