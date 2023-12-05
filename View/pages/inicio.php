@@ -24,7 +24,7 @@
 
     <div class="row">
         <div class="col-lg-4">
-            <div class="card mb-4">
+            <div class="card mb-4 animate__animated animate__pulse">
                 <div class="card-body text-center">
                     <i class="fas fa-user-graduate icon-lg"></i>
                     <h5 class="card-title mt-3">Alumnos</h5>
