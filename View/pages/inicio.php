@@ -1,35 +1,68 @@
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
 
-<header class="bg-light text-center py-5">
-    <div class="container">
-        <h1 class="display-4">Bienvenido al Sistema de Control de Alumnos</h1>
-        <p class="lead">Gestiona fácilmente la información de tus alumnos.</p>
-    </div>
-</header>
+    .jumbotron {
+        background-color: #007bff;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+</style>
 
 <!-- Contenido principal -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="mb-4">Últimas Noticias</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Nuevo semestre</h5>
-                        <p class="card-text">Comienza un nuevo semestre. ¡Prepárate para un emocionante período académico!</p>
-                    </div>
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">¡Bienvenido!</h1>
+        <p class="lead">Administra fácilmente la información de tus alumnos y sus calificaciones de manera eficiente.</p>
+        <hr class="my-4">
+        <p>Regístrate para comenzar a utilizar nuestro sistema.</p>
+        <a class="btn btn-light btn-lg" href="index.php?action=crearCuenta" role="button">Regístrate</a>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-graduate icon-lg"></i>
+                    <h5 class="card-title mt-3">Alumnos</h5>
+                    <p class="card-text">Gestiona la información de tus alumnos de forma eficiente.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Recordatorio: Exámenes</h5>
-                        <p class="card-text">Recuerda que los exámenes finales se llevarán a cabo del 10 al 20 de diciembre.</p>
-                    </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-bar icon-lg"></i>
+                    <h5 class="card-title mt-3">Calificaciones</h5>
+                    <p class="card-text">Registra y analiza las calificaciones de tus alumnos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-cog icon-lg"></i>
+                    <h5 class="card-title mt-3">Configuración</h5>
+                    <p class="card-text">Personaliza el sistema según tus necesidades.</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Últimos Alumnos Registrados</h2>
+            <!-- Puedes agregar una lista de los últimos alumnos registrados aquí -->
+        </div>
+        <div class="col-lg-6">
+            <h2>Noticias y Actualizaciones</h2>
+            <!-- Puedes agregar un feed de noticias y actualizaciones aquí -->
+        </div>
+    </div>
+</div>
 
 <!-- Pie de página -->
 
