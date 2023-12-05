@@ -9,8 +9,8 @@ class UsuarioController
     public function login()
     {
         if (!empty($_POST['usuario']) && !empty($_POST['password'])) {
-            $usuario = strClean($_POST['usuario']);
-            $password = strClean($_POST['password']);
+            $usuario = ($_POST['usuario']);
+            $password = ($_POST['password']);
 
             $datos = array(
                 'usuario' => $usuario,
@@ -30,7 +30,7 @@ class UsuarioController
                 } else {
                     return "Error";
                 }
-            }else{
+            } else {
                 return "ErrorUs";
             }
         }
@@ -46,15 +46,15 @@ class UsuarioController
     {
         if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['usuario']) && !empty($_POST['password']) && !empty($_POST['rol'])) {
 
-            $nombre = strClean($_POST['nombre']);
-            $apellido = strClean($_POST['apellido']);
-            $usuario = strClean($_POST['usuario']);
-            $password = strClean($_POST['password']);
+            $nombre = $_POST['nombre'];
+            $apellido = $_POST['apellido'];
+            $usuario = $_POST['usuario'];
+            $password = $_POST['password'];
 
 
             $password = password_hash($password, PASSWORD_DEFAULT);
 
-            $rol = strClean($_POST['rol']);
+            $rol = $_POST['rol'];
 
             $datos = array(
                 'nombre' => $nombre,
@@ -67,5 +67,11 @@ class UsuarioController
 
             return $respuesta ? "guardado" : "error";
         }
+    }
+
+    public function mostrarRol()
+    {
+        $rol = UsuarioModel::mostrarRol();
+        return $rol; //se van a la vista
     }
 }
