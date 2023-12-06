@@ -11,6 +11,8 @@ class EnlacesModel{
             "contacto"=>"View/pages/contacto.php",
             "login"=>"View/users/login.php",
             "crearCuenta"=>"View/users/nuevoUsuario.php",
+            "agregarProfesor"=>"View/profesores/agregarProfesor.php",
+            "logout"=>"View/users/logout.php",
             default => "View/pages/error.php"
 
         };
