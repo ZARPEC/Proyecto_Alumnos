@@ -32,10 +32,18 @@ class UsuarioModel
         }
     }
 
-    public static function mostrarRol(){
+    public static function mostrarRol()
+    {
         $stmt = ConexionModel::conectar()->prepare("SELECT * FROM rol");
         $stmt->execute();
         return $stmt->fetchAll();
     }
-  
+
+    public static function mostrarUsuario()
+    {
+
+        $stmt = ConexionModel::conectar()->prepare(("SELECT * from usuario WHERE fkrol = '2'"));
+        $stmt -> execute();
+        return $stmt->fetchAll();
+    }
 }
