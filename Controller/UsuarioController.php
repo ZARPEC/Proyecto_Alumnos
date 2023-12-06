@@ -25,7 +25,7 @@ class UsuarioController
                     $_SESSION['nombres'] = $respuesta['nombres'];
                     $_SESSION['apellidos'] = $respuesta['apellidos'];
                     $_SESSION['id'] = $respuesta['id'];
-                    $_SESSION['rol'] = $respuesta['rol'];
+                    $_SESSION['rol'] = $respuesta['fkrol'];
                     header("location: index.php?action=inicio&id={$respuesta['id']}");
                 } else {
                     return "Error";
@@ -73,5 +73,10 @@ class UsuarioController
     {
         $rol = UsuarioModel::mostrarRol();
         return $rol; //se van a la vista
+    }
+
+    public function mostrarUsuarios(){
+        $usuario=usuarioModel::mostrarUsuario();
+        return $usuario;
     }
 }
