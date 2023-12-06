@@ -9,17 +9,29 @@
         padding: 2rem;
         border-radius: 10px;
     }
-
 </style>
 
 <!-- Contenido principal -->
 <div class="container mt-5">
     <div class="jumbotron">
         <h1 class="display-4">¡Bienvenido!</h1>
+        <h1 class="display-4">
+            <?php
+            if (!empty($_SESSION['rol'])) {
+                echo $_SESSION['nombres'];
+            }
+            ?>
+        </h1>
         <p class="lead">Administra fácilmente la información de tus alumnos y sus calificaciones de manera eficiente.</p>
         <hr class="my-4">
         <p>Regístrate para comenzar a utilizar nuestro sistema.</p>
-        <a class="btn btn-light btn-lg" href="index.php?action=crearCuenta" role="button">Regístrate</a>
+        <?php
+        if (empty($_SESSION['nombres'])) {
+        ?>
+            <a class="btn btn-light btn-lg" href="index.php?action=crearCuenta" role="button">Regístrate</a>
+        <?php
+        }
+        ?>
     </div>
 
     <div class="row">
@@ -55,17 +67,11 @@
     <div class="row">
         <div class="col-lg-6">
             <h2>Últimos Alumnos Registrados</h2>
-            <!-- Puedes agregar una lista de los últimos alumnos registrados aquí -->
+
         </div>
         <div class="col-lg-6">
             <h2>Noticias y Actualizaciones</h2>
-            <!-- Puedes agregar un feed de noticias y actualizaciones aquí -->
+
         </div>
     </div>
 </div>
-
-<!-- Pie de página -->
-
-
-<!-- Enlaces a Bootstrap JS y Popper.js (necesarios para ciertas funcionalidades de Bootstrap) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
