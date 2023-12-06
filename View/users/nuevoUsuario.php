@@ -42,7 +42,7 @@ $rol = $usuario;
 
         <div class="form-group">
             <div class="row mb-3">
-                <div class="col-2"><label>Categoria</label></div>
+                <div class="col-2"><label>Rol</label></div>
                 <div class="col-5">
                     <select name="rol" class="form-select">
                         <?php
