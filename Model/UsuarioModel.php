@@ -42,7 +42,7 @@ class UsuarioModel
     public static function mostrarUsuario()
     {
 
-        $stmt = ConexionModel::conectar()->prepare(("SELECT * from usuario WHERE fkrol = '2'"));
+        $stmt = ConexionModel::conectar()->prepare(("SELECT u.nombres, u.apellidos, u.id, u.fkrol FROM profesor p right join usuario u ON p.fkusuario = u.id WHERE p.fkusuario is null and u.fkrol='2'"));
         $stmt -> execute();
         return $stmt->fetchAll();
     }

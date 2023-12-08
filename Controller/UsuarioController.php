@@ -39,7 +39,7 @@ class UsuarioController
     public function logout()
     {
         session_destroy();
-        header("location: index.php?action=inicio");
+        header("location:index.php?action=inicio");
     }
 
     public function UsuarioNuevo()

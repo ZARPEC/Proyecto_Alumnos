@@ -44,7 +44,7 @@
                                 <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profesores</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Modificar Profesor</a>
-                                    <a class="dropdown-item" href="#">Listado profesores</a>
+                                    <a class="dropdown-item" href="index.php?action=listadoProfesores">Listado profesores</a>
                                     <a class="dropdown-item" href="index.php?action=agregarProfesor">Agregar profesor</a>
                                     <div class="dropdown-divider"></div>
                                 </div>
