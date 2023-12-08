@@ -17,6 +17,12 @@ class profesorModel{
             return false;
         }
     }
+
+    public static function mostrarProfesor() {
+        $stmt = ConexionModel::conectar()->prepare("SELECT * FROM profesor");
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
 
 ?>

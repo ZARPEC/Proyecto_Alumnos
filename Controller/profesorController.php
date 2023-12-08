@@ -25,4 +25,9 @@ class profesorController
             return $respuesta ? "guardado" : "error";
         }
     }
+
+    public function MostrarProfesores(){
+        $profesor=profesorModel::mostrarProfesor();
+        return $profesor;
+    }
 }
