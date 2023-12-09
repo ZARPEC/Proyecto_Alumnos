@@ -37,18 +37,31 @@
                         </li>
                     </ul>
                     <?php
-                    if (!empty($_SESSION['rol']) && $_SESSION['rol'] == '1') {
+                    if ($_SESSION['rol']=='3' || $_SESSION['rol'] == '1') {
                     ?>
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profesores</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Modificar Profesor</a>
+                                    <a class="dropdown-item" href="index.php?action=modificarProfesor">Modificar Profesor</a>
                                     <a class="dropdown-item" href="index.php?action=listadoProfesores">Listado profesores</a>
                                     <a class="dropdown-item" href="index.php?action=agregarProfesor">Agregar profesor</a>
                                     <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index.php?action=asignarGrado">Asignar grado</a>
                                 </div>
                             </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Grados</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="index.php?action=modificarProfesor">Modificar grado</a>
+                                    <a class="dropdown-item" href="index.php?action=listadoProfesores">Listado de grados</a>
+                                    <a class="dropdown-item" href="index.php?action=agregarProfesor">Agregar grado</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index.php?action=asignarGrado">Asignar grado</a>
+                                </div>
+                            </li>
+
                         </ul>
                     <?php } ?>
                     <a class="nav-link  text-light" href="index.php?action=logout">Cerrar sesión</a>

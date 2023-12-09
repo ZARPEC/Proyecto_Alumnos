@@ -23,7 +23,7 @@ $capturaEnlace = new PaginaController;
 </head>
 <?php require_once('View/pages/navbar.php'); ?>
 
-<body>
+<body class="bg-light">
 
     <div class="container min-vh-100 scrollStyle">
         <?php

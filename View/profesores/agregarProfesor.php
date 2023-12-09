@@ -6,7 +6,7 @@ $usuario= new UsuarioController();
 $profesor= new profesorController();
 ?>
 
-<h1 class="text-center">Login</h1>
+<h1 class="text-center">Agregar Profesor</h1>
 <div class="container w-50">
 
     <form method="POST" id="formulario" data-intro='Formulario para iniciar sesion'>
