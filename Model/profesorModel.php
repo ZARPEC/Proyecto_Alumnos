@@ -19,7 +19,7 @@ class profesorModel{
     }
 
     public static function mostrarProfesor() {
-        $stmt = ConexionModel::conectar()->prepare("SELECT * FROM profesor");
+        $stmt = ConexionModel::conectar()->prepare("SELECT profesor.id,profesor.nombre, profesor.apellido, usuario.usuario FROM profesor INNER JOIN usuario ON profesor.fkusuario = usuario.id");
         $stmt->execute();
         return $stmt->fetchAll();
     }
