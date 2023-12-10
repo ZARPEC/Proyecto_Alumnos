@@ -24,9 +24,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Alumnos</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Modificar Alumnos</a>
+                                <a class="dropdown-item" href="index.php?action=modificarAlumno">Modificar Alumnos</a>
                                 <a class="dropdown-item" href="#">Listado Alumnos</a>
-                                <a class="dropdown-item" href="#">Agregar alumno</a>
+                                <a class="dropdown-item" href="index.php?action=agregarAlumno">Agregar alumno</a>
                                 <div class="dropdown-divider"></div>
                                 <?php
                                 if (!empty($_SESSION['rol']) && $_SESSION['rol'] == '1') {
@@ -54,9 +54,9 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Grados</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="index.php?action=modificarProfesor">Modificar grado</a>
-                                    <a class="dropdown-item" href="index.php?action=listadoProfesores">Listado de grados</a>
-                                    <a class="dropdown-item" href="index.php?action=agregarProfesor">Agregar grado</a>
+                                    <a class="dropdown-item" href="index.php?action=modificarGrado">Modificar grado</a>
+                                    <a class="dropdown-item" href="index.php?action=listadoGrado">Listado de grados</a>
+                                    <a class="dropdown-item" href="index.php?action=agregarGrado">Agregar grado</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="index.php?action=asignarGrado">Asignar grado</a>
                                 </div>

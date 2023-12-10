@@ -4,7 +4,7 @@ use Controller\profesorController;
 
 
 
-if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1' ) {
+if ($_SESSION['rol']=='3' || $_SESSION['rol']=='1' ) {
     $profesor=new profesorController();
     $listado = $profesor->MostrarProfesores();
 
