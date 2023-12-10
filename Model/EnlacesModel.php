@@ -14,6 +14,10 @@ class EnlacesModel{
             "agregarProfesor"=>"View/profesores/agregarProfesor.php",
             "listadoProfesores"=>"view/profesores/listadoProfesores.php",
             "modificarProfesor"=>"View/profesores/modificarProfesor.php",
+            "modificarAlumno"=>"View/alumnos/modificarAlumno.php",
+            "agregarGrado"=>"View/grado/agregarGrado.php",
+            "modificarGrado"=>"View/grado/modificarGrado.php",
+            "agregarAlumno"=>"View/alumnos/agregarAlumno.php",
             "logout"=>"View/users/logout.php",
             default => "View/pages/error.php"
 
