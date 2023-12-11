@@ -25,7 +25,7 @@
                             <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Alumnos</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="index.php?action=modificarAlumno">Modificar Alumnos</a>
-                                <a class="dropdown-item" href="#">Listado Alumnos</a>
+                                <a class="dropdown-item" href="index.php?action=listadoAlumno">Listado Alumnos</a>
                                 <a class="dropdown-item" href="index.php?action=agregarAlumno">Agregar alumno</a>
                                 <div class="dropdown-divider"></div>
                                 <?php
