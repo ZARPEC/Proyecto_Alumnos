@@ -26,7 +26,7 @@ class UsuarioController
                     $_SESSION['apellidos'] = $respuesta['apellidos'];
                     $_SESSION['id'] = $respuesta['id'];
                     $_SESSION['rol'] = $respuesta['fkrol'];
-                    header("location: index.php?action=inicio&id={$respuesta['id']}");
+                    header("location: index.php?action=inicio");
                 } else {
                     return "Error";
                 }

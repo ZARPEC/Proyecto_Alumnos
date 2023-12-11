@@ -29,8 +29,8 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1'
                 <td class='col'>{$item['carnet']}</td>
                 <td class='col'>{$item['Nombre']}</td>
                 <td class='col'>{$item['apellido']}</td>
-                <td class='col'><a class='alert-link' href='index.php?action=editarAlquiler&idAlquiler={$item['id']}'>editar</a></td>
-                <td class='col'><a class='alert-link' href='index.php?action=eliminarAlquiler&idAlquiler={$item['id']}' >Eliminar</a></td>
+                <td class='col'><a class='alert-link' href='index.php?action=editarAlumno&idAlumno={$item['id']}'>editar</a></td>
+                <td class='col'><a class='alert-link' href='index.php?action=eliminarAlumno&idAlumno={$item['id']}' >Eliminar</a></td>
             </tr>
         ";
     }

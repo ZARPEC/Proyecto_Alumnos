@@ -37,8 +37,7 @@
                         </li>
                     </ul>
                     <?php
-                    if ($_SESSION['rol']=='3' || $_SESSION['rol'] == '1') {
-                    ?>
+                    if ($_SESSION['rol'] == '3' || $_SESSION['rol'] == '1') { ?>
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profesores</a>
@@ -63,17 +62,14 @@
                             </li>
 
                         </ul>
-                    <?php } ?>
+                    <?php }
+                    ?>
                     <a class="nav-link  text-light" href="index.php?action=logout">Cerrar sesión</a>
                 <?php } else { //No ha iniciado sesión
                 ?>
                     <a class="nav-link  text-light" href="index.php?action=login">Iniciar sesión</a>
                     <a class="nav-link  text-light" href="index.php?action=crearCuenta">Crear Cuenta</a>
                 <?php } ?>
-
-
-
-
             </div>
         </div>
     </div>

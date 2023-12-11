@@ -21,4 +21,19 @@ class alumnoModel{
             return false;
         }
     }
+
+    public static function editarAlumno($idAlquiler){
+        $stmt = ConexionModel::conectar()->prepare("SELECT * FROM alumno WHERE alumno.id = :id");
+        $stmt->bindParam(':id',$idAlquiler,\PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch();//1 reg. Fetch
+    }
+
+    public static function actualizarAlumno($datos){
+        $stmt = ConexionModel::conectar()->prepare("UPDATE alumno SET Nombre = :nom, apellido =:apellido where alumno.id = :idAlumno");
+        $stmt->bindParam(':nom',$datos['nombre'],\PDO::PARAM_STR);
+        $stmt->bindParam(':apellido',$datos['apellido'],\PDO::PARAM_STR);
+        $stmt->bindParam(':idAlumno',$datos['idAlumno'],\PDO::PARAM_INT);
+        return $stmt->execute() ? true : false;
+    }
 }
