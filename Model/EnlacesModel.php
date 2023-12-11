@@ -15,6 +15,7 @@ class EnlacesModel{
             "listadoProfesores"=>"view/profesores/listadoProfesores.php",
             "modificarProfesor"=>"View/profesores/modificarProfesor.php",
             "modificarAlumno"=>"View/alumnos/modificarAlumno.php",
+            "eliminarAlumno"=>"View/alumnos/eliminarAlumno.php",
             "listadoAlumno"=>"View/alumnos/listadoAlumnos.php",
             "agregarGrado"=>"View/grado/agregarGrado.php",
             "listadoGrado"=>"View/grado/listadoGrado.php",

@@ -36,4 +36,17 @@ class alumnoModel{
         $stmt->bindParam(':idAlumno',$datos['idAlumno'],\PDO::PARAM_INT);
         return $stmt->execute() ? true : false;
     }
+
+    public static function borrarAlumno($idAlumno){
+        $stmt = ConexionModel::conectar()->prepare("SELECT * From alumno where alumno.id = :id");
+        $stmt->bindParam(':id',$idAlumno,\PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetch();//1 reg. Fetch
+    }
+    
+    public static function borrarConfirmado($id){
+        $stmt = ConexionModel::conectar()->prepare("DELETE FROM alumno where alumno.id = :id");
+        $stmt->bindParam(':id',$id,\PDO::PARAM_INT);
+        return $stmt->execute() ? true : false;
+    }
 }

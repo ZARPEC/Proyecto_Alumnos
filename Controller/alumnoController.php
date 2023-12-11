@@ -55,4 +55,19 @@ class alumnoController
             }
         }
     }
+
+    public function borrar(){
+        if( !empty($_GET['idAlumno'])){
+            $alumno = alumnoModel::borrarAlumno($_GET['idAlumno']);
+            return $alumno;
+        }
+    }
+
+    public function confirmarBorrar(){
+        if( !empty($_POST['idAlumno'])){
+            $alumno = alumnoModel::borrarConfirmado($_POST['idAlumno']);
+            if($alumno){ header("Location: index.php?action=modificarAlumno"); }
+        }
+        
+    }
 }
