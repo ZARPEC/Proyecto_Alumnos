@@ -1,0 +1,20 @@
+{
+    "name": "zarpec/alumnos",
+    "description": "manejo de alumnos con PHP",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zarpec\\Alumnos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "a"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dompdf/dompdf": "dev-master"
+    }
+}
