@@ -1,28 +1,32 @@
 <?php
+
 namespace Controller;
 
 use Model\asignacionModel;
 
 
-class asignacionController{
+class asignacionController
+{
 
-    public function mostrarCursos(){
+    public function mostrarCursos()
+    {
 
-        $cursos=asignacionModel::mostrarCursos();
+        $cursos = asignacionModel::mostrarCursos();
         return $cursos;
     }
 
-    public function asignar(){
+    public function asignar()
+    {
         if (!empty($_POST['fkalumno']) && !empty($_POST['fkcurso']) && !empty($_POST['fkgrado'])) {
             $alumno = $_POST['fkalumno'];
             $curso = $_POST['fkcurso'];
             $grado = $_POST['fkgrado'];
 
             $datos = array(
-                'alumno'=>$alumno,
+                'alumno' => $alumno,
                 'curso' => $curso,
                 'grado' => $grado,
-                'fecha'=>date("Y/m/d")
+                'fecha' => date("Y/m/d")
             );
             $respuesta = asignacionModel::asignar($datos);
 
@@ -30,5 +34,3 @@ class asignacionController{
         }
     }
 }
-?>
-

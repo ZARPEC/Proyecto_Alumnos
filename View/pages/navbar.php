@@ -62,7 +62,22 @@
                             </li>
 
                         </ul>
-                    <?php }
+                    <?php } else if (!empty($_SESSION['rol'])){
+
+
+                    ?>
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">grado</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="index.php?action=verGrado">Ver grado</a>
+                                    <a class="dropdown-item" href="index.php?action=listadoALumnosGrado">Listado Alumnos</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    <?php
+                    }
                     ?>
                     <a class="nav-link  text-light" href="index.php?action=logout">Cerrar sesión</a>
                 <?php } else { //No ha iniciado sesión
