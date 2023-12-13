@@ -79,7 +79,7 @@
                     <?php
                     }
                     ?>
-                    <a class="nav-link  text-light" href="index.php?action=logout">Cerrar sesión</a>
+                    <a class="nav-link  text-light" href="index.php?action=logout">Cerrar sesión  <i class="bi bi-box-arrow-right"></i></a>
                 <?php } else { //No ha iniciado sesión
                 ?>
                     <a class="nav-link  text-light" href="index.php?action=login">Iniciar sesión</a>

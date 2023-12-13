@@ -22,6 +22,7 @@ class EnlacesModel{
             "pdfgradoAlumnos"=>"view/profesores/pdfGradoAlumnos.php",
             "asignarCurso"=>"View/asignacion/asignarCurso.php",
             "agregarGrado"=>"View/grado/agregarGrado.php",
+            "exelgradoAlumnos"=>"View/profesores/excelGrado.php",
             "pdfProfesores"=>"View/extras/Pdf.php",
             "listadoGrado"=>"View/grado/listadoGrado.php",
             "editarAlumno"=>"view/alumnos/editar.php",
