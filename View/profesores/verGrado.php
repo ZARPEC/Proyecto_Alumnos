@@ -12,7 +12,8 @@ $gradoAlumnos= new gradoController();
 </div>
 <div class="row justify-content-center">
     <div class="col-auto mt-3">
-        <a class="btn btn-primary" role="button" href="index.php?action=pdfAlumnos">Generar PDF</a>
+        <a class="btn btn-primary" role="button" href="index.php?action=pdfgradoAlumnos">Generar PDF</a>
+        <a class="btn btn-primary" role="button" href="index.php?action=exelgradoAlumnos">Generar excel</a>
     </div>
 </div>
 <script type="text/javascript">
