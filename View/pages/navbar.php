@@ -29,9 +29,9 @@
                                 <a class="dropdown-item" href="index.php?action=agregarAlumno">Agregar alumno</a>
                                 <div class="dropdown-divider"></div>
                                 <?php
-                                if (!empty($_SESSION['rol']) && $_SESSION['rol'] == '1') {
+                                if ($_SESSION['rol'] == '3' || $_SESSION['rol'] == '1') {
                                 ?>
-                                    <a class="dropdown-item" href="index.php?action=agregarLibro">Listar todos los alumnos</a>
+                                    <a class="dropdown-item" href="index.php?action=asignarCurso">asignar curso</a>
                                 <?php } ?>
                             </div>
                         </li>
