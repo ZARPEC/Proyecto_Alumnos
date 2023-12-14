@@ -7,9 +7,10 @@ require 'vendor/autoload.php';
 use Dompdf\Dompdf;
 use Controller\alumnoController;
 
-class pdfAlumnosController{
+class pdfAlumnosController
+{
 
-    
+
     public function generate()
     {
         $alumno = new alumnoController();
@@ -97,8 +98,9 @@ class pdfAlumnosController{
         }
         </style>
     
-    <h1>Listado de profesores</h1>
-    <center><table>
+    <center>
+    <h1>Listado de Alumnos</h1>
+    <table>
         <th>ID</th>
         <th>Carnet</th>
         <th>Nombres</th>
@@ -108,7 +110,7 @@ class pdfAlumnosController{
 
         $bodyTable = "";
         foreach ($listaAlumnos as $alumno) {
-            $bodyTable = $bodyTable . "<tr><td>" . $alumno['id'] . "</td>"."<td>" . $alumno['carnet'] . "</td>"."<td>" . $alumno['Nombre'] . "</td>" . "<td>" . $alumno['apellido'] . "</td></tr>";
+            $bodyTable = $bodyTable . "<tr><td>" . $alumno['id'] . "</td>" . "<td>" . $alumno['carnet'] . "</td>" . "<td>" . $alumno['Nombre'] . "</td>" . "<td>" . $alumno['apellido'] . "</td></tr>";
         }
 
         $completeTable = $headerTable . $bodyTable . $footerTable;

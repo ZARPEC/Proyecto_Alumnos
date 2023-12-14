@@ -67,7 +67,7 @@ if (!empty($_SESSION['id'])) {
 
             <div class="form-group">
                 <div class="row">
-                    <button type="submit" class="btn btn-outline-success btn-sm mb-5">Agregar</button>
+                    <button type="submit" class="btn btn-outline-success btn-sm mb-5">Actualizar</button>
                 </div>
             </div>
             <input type='hidden' name='idAlumno' value='<?php echo $datos['id'] ?>'>

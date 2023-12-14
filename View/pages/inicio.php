@@ -24,11 +24,11 @@
         </h1>
         <p class="lead">Administra fácilmente la información de tus alumnos y sus calificaciones de manera eficiente.</p>
         <hr class="my-4">
-        <p>Regístrate para comenzar a utilizar nuestro sistema.</p>
         <?php
         if (empty($_SESSION['nombres'])) {
         ?>
-            <a class="btn btn-light btn-lg" href="index.php?action=crearCuenta" role="button">Regístrate</a>
+            <p>Inicia para comenzar a utilizar nuestro sistema.</p>
+            <a class="btn btn-light btn-lg" href="index.php?action=login" role="button">Iniciar sesión</a>
         <?php
         }
         ?>
