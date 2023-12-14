@@ -30,8 +30,8 @@ if ($_SESSION['rol']=='3' || $_SESSION['rol']=='1' ) {
                 <td class='col'>{$item['nombre']}</td>
                 <td class='col'>{$item['apellido']}</td>
                 <td class='col'>{$item['usuario']}</td>
-                <td class='col'><a class='alert-link' href='index.php?action=editarAlquiler&idAlquiler={$item['id']}'>editar</a></td>
-                <td class='col'><a class='alert-link' href='index.php?action=eliminarAlquiler&idAlquiler={$item['id']}' >Eliminar</a></td>
+                <td class='col'><a class='alert-link' href='index.php?action=editarProfesor&idProfesor={$item['id']}'>editar</a></td>
+                <td class='col'><a class='alert-link' href='index.php?action=eliminarProfesor&idProfesor={$item['id']}' >Eliminar</a></td>
             </tr>
         ";
     }

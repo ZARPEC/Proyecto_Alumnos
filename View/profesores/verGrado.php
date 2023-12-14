@@ -12,7 +12,7 @@ $gradoAlumnos= new gradoController();
 </div>
 <div class="row justify-content-center">
     <div class="col-auto mt-3">
-        <a class="btn btn-primary" role="button" href="index.php?action=pdfgradoAlumnos"> Generar PDF <i class="bi bi-filetype-pdf"></i></a>
+        <a class="btn btn-primary" role="button" href="index.php?action=pdfgradoAlumnos" target="_blank"> Generar PDF <i class="bi bi-filetype-pdf"></i></a>
         <a class="btn btn-primary" role="button" href="index.php?action=exelgradoAlumnos">Generar excel<i class="  bi bi-file-earmark-spreadsheet"></i></a>
     </div>
 </div>

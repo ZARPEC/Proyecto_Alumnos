@@ -10,7 +10,7 @@ $profesor = new profesorController();
 </div>
 <div class="row justify-content-center">
     <div class="col-auto mt-3">
-        <a class="btn btn-primary" role="button"  href="index.php?action=pdfProfesores">Generar PDF</a>
+        <a class="btn btn-primary" role="button"  href="index.php?action=pdfProfesores" target="_blank">Generar PDF</a>
     </div>
 </div>
 <script type="text/javascript">

@@ -26,7 +26,7 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1'
                 <td class='col'>{$item['id']}</td>
                 <td class='col'>{$item['grado']}</td>
                 <td class='col'>{$item['nombreProfesor']}</td>
-                <td class='col'><a class='alert-link' href='index.php?action=editarAlquiler&idAlquiler={$item['id']}'>editar</a></td>
+                <td class='col'><a class='alert-link' href='index.php?action=editarGrado&idGrado={$item['id']}'>editar</a></td>
                 <td class='col'><a class='alert-link' href='index.php?action=eliminarAlquiler&idAlquiler={$item['id']}' >Eliminar</a></td>
             </tr>
         ";
