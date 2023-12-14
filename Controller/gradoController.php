@@ -36,4 +36,29 @@ class gradoController
         $grado = gradoModel::mostrarAlumnoGrado();
         return $grado;
     }
+
+    public function editarGrado()
+    {
+
+        $idGrado = $_GET['idGrado'];
+        $idGrado = gradoModel::editarGrado($idGrado);
+        return $idGrado;
+    }
+
+    public function actualizar()
+    {
+        if (!empty($_POST['grado']) && !empty($_POST['fkprofesor'])) {
+            $datos = array(
+                "grado" => $_POST['grado'],
+                "fkprofesor" => $_POST['fkprofesor'],
+                "idGrado" => $_POST['idGrado']
+            );
+            //Enviando los datos al modelo, para que se actualice el registro.
+            $respuesta = gradoModel::actualizarGrado($datos);
+
+            if ($respuesta) {
+                header("Location: index.php?action=modificarGrado");
+            }
+        }
+    }
 }

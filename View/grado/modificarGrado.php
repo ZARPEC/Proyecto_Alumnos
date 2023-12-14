@@ -2,8 +2,8 @@
 
 use Controller\gradoController;
 
-if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1' ) {
-    $grado=new gradoController();
+if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol'] == '1') {
+    $grado = new gradoController();
     $listado = $grado->MostrarGrado();
 
     echo "
@@ -15,7 +15,6 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1'
             <th scope='col'>Grado</th>
             <th scope='col'>Nombre Profesor</th>
             <th class='col'>Editar</th>
-            <th class='col'>Eliminar</th>
         </tr>
     </thead>
     <tbody>
@@ -27,8 +26,7 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1'
                 <td class='col'>{$item['grado']}</td>
                 <td class='col'>{$item['nombreProfesor']}</td>
                 <td class='col'><a class='alert-link' href='index.php?action=editarGrado&idGrado={$item['id']}'>editar</a></td>
-                <td class='col'><a class='alert-link' href='index.php?action=eliminarAlquiler&idAlquiler={$item['id']}' >Eliminar</a></td>
-            </tr>
+                </tr>
         ";
     }
     echo " 
@@ -37,5 +35,3 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['rol']) && $_SESSION['rol']=='1'
     </div>
     ";
 }
-
-?>

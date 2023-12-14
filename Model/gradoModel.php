@@ -40,4 +40,22 @@ class gradoModel
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    public static function editarGrado($idGrado)
+    {
+        $stmt = ConexionModel::conectar()->prepare("SELECT grado.id, grado.grado, CONCAT(profesor.nombre, ' ' , profesor.apellido) as nombreProfesor FROM grado INNER JOIN profesor ON profesor.id = grado.fkprofesor WHERE grado.id = :id");
+        $stmt->bindParam(':id', $idGrado, \PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(); //1 reg. Fetch
+
+    }
+
+    public static function actualizarGrado($datos)
+    {
+        $stmt = ConexionModel::conectar()->prepare("UPDATE grado SET grado.grado = :grado, fkprofesor =:fkprofesor where grado.id = :idGrado");
+        $stmt->bindParam(':grado', $datos['grado'], \PDO::PARAM_STR);
+        $stmt->bindParam(':fkprofesor', $datos['fkprofesor'], \PDO::PARAM_STR);
+        $stmt->bindParam(':idGrado', $datos['idGrado'], \PDO::PARAM_INT);
+        return $stmt->execute() ? true : false;
+    }
 }
