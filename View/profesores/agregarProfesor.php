@@ -42,7 +42,7 @@ $profesor= new profesorController();
 
         <div class="form-group">
             <div class="row">
-                <button type="submit" class="btn btn-outline-success btn-sm">Iniciar sesión</button>
+                <button type="submit" class="btn btn-outline-success btn-sm">Agregar profesor</button>
             </div>
         </div>
 
