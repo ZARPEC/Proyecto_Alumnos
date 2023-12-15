@@ -31,7 +31,7 @@ class gradoModel
     {
         $nombreProfesor=$_SESSION['usuario'];
         $stmt = ConexionModel::conectar()->prepare(
-            "SELECT asignacion.id,alumno.Nombre nombreAlumno,alumno.apellido,grado.grado, cursos.Nombre curso,asignacion.fecha FROM asignacion
+            "SELECT asignacion.id,alumno.carnet,alumno.Nombre nombreAlumno,alumno.apellido,grado.grado, cursos.Nombre curso,asignacion.fecha FROM asignacion
             INNER JOIN grado ON asignacion.fkgrado=grado.id 
             INNER JOIN profesor ON grado.fkprofesor=profesor.id
             INNER JOIN alumno ON alumno.id=asignacion.fkalumno

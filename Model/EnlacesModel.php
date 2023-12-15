@@ -30,6 +30,8 @@ class EnlacesModel{
             "eliminarProfesor"=>"View/profesores/eliminar.php",
             "editarProfesor"=>"View/profesores/editarProfesor.php",
             "editarGrado"=>"View/grado/editar.php",
+            "pdfGrado"=>"View/grado/pdfGrado.php",
+            "excelNotas"=>"View/profesores/excelnotas.php",
             "modificarGrado"=>"View/grado/modificarGrado.php",
             "agregarAlumno"=>"View/alumnos/agregarAlumno.php",
             "logout"=>"View/users/logout.php",
